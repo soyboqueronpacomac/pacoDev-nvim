@@ -12,7 +12,7 @@
 
   outputs = { nixpkgs, home-manager, ... }:
     let
-      system = "aarch64-darwin";  # Asegurate de que coincida con tu sistema
+      system = "x86_64-darwin";  # Asegurate de que coincida con tu sistema
       pkgs = import nixpkgs { inherit system; };
     in {
       homeConfigurations = {
